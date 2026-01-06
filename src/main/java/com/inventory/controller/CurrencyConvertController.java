@@ -15,7 +15,7 @@ import java.io.IOException;
 public class CurrencyConvertController {
     @Autowired
     private CurrencyConversion currencyConversion;
-
+    //this is information which used to tell about currency conversion
     @GetMapping("/convert")
     public ResponseEntity<?> convert(@RequestParam Double amount,
                                      @RequestParam String from,
